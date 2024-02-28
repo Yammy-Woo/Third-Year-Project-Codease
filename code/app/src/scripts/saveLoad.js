@@ -133,8 +133,14 @@ function download() {
                 margin-top: -${template.offsetTop}px;
                 cursor: auto;
             }
+            .element a {
+                all: unset;
+                margin: 7px 10px;
+                cursor: pointer;
+            }
             .element p {
                 margin: 10px 10px;
+                line-height: 1.5;
             }
             #Background {
                 width: 100%;

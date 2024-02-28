@@ -39,11 +39,21 @@ body {
   padding: 20px;
 }
 
+#HomePage h1 {
+  color: #0D3B66;
+  font-weight: bold;
+}
+
 #HomePage #Library {
   margin: -20px;
   padding: 30px 20px;
   background-color: #0D3B66;
   color: white;
+}
+
+#HomePage #Library h1 {
+  color: white;
+  font-weight: bold;
 }
 
 #HomePage button {
@@ -80,7 +90,7 @@ body {
   transition: transform 0.9s ease-out;
   text-align: left;
   z-index: 3;
-  zoom: 0.22; 
+  zoom: 0.3; 
 }
 
 #HomePage .Preview * {
@@ -160,6 +170,16 @@ body {
   color: #ADB5BD;
 }
 
+.link-inputs {
+  width: 500px;
+}
+
+.link-inputs label{
+  width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
 #Toolbar .divider {
   color: #ADB5BD;
   margin: 0 10px;
@@ -215,10 +235,16 @@ body {
   overflow: visible;
   white-space: normal;
   z-index: 1;
+  align-items: center;
+}
+
+.element a {
+  all: unset;
 }
 
 .element p {
   margin: 10px 10px;
+  line-height: 1.5;
 }
 
 #Loading {

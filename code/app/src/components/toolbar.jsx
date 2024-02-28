@@ -118,6 +118,7 @@ function Toolbar({ setComponent, setKey, setElements, user }) {
                             onClick={() => {
                                 const id = template.getAttribute("data-selected");
                                 const elem = document.getElementById(id);
+                                if (!elem) { return; }
                                 setLinks([...elem.getElementsByTagName("a")]);
                                 changeLink(elem);
                             }}
@@ -127,7 +128,6 @@ function Toolbar({ setComponent, setKey, setElements, user }) {
                                 (link, id) => (
                                     <Dropdown.Item 
                                         eventKey={id}
-                                        style={{width: "500px"}}
                                         className="link-inputs"
                                     >
                                         <Form.Group className="mb-3">
